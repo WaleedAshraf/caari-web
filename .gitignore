@@ -38,7 +38,7 @@ jspm_packages
 
 # scripts
 scripts
-external-scripts
+external-scripts.json
 
 # bin
 bin
