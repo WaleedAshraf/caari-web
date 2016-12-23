@@ -40,9 +40,6 @@ jspm_packages
 scripts
 external-scripts.json
 
-# bin
-bin
-
 # cache
 babel_cache
 
