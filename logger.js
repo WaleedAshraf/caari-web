@@ -12,7 +12,7 @@ var logger = new(winston.Logger)({
     warning: 3,
     notice: 2,
     info: 1,
-    debug: 0,
+    debug: 0
   },
   colors: {
     emerg: 'red',
@@ -22,7 +22,7 @@ var logger = new(winston.Logger)({
     warning: 'red',
     notice: 'yellow',
     info: 'green',
-    debug: 'blue',
+    debug: 'blue'
   },
   transports: [
     new (winston.transports.Console)({
