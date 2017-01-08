@@ -4,12 +4,12 @@ const debug = process.env.NODE_ENV !== "production";
 
 const webpack = require('webpack');
 const path = require('path');
-const entryPath =  path.join(__dirname, 'web', 'app-client.js')
+const entryPath = path.join(__dirname, 'web', 'app-client.js')
 module.exports = {
   devtool: debug ? 'inline-sourcemap' : null,
   entry: entryPath, // Your appʼs entry point
- // entry: path.join(__dirname, 'web', 'app-client.js'),
-  
+  // entry: path.join(__dirname, 'web', 'app-client.js'),
+
   output: {
     path: path.join(__dirname, 'static', 'js'),
     publicPath: "/static/js/",
@@ -18,7 +18,7 @@ module.exports = {
   module: {
     loaders: [{
       test: path.join(__dirname, 'web'),
-      loader: [ 'babel-loader' ],
+      loader: ['babel-loader'],
       query: {
         cacheDirectory: 'babel_cache',
         presets: ['react', 'es2015']
@@ -37,6 +37,6 @@ module.exports = {
       sourcemap: false,
       beautify: false,
       dead_code: true
-    }),
+    })
   ]
 };
